@@ -1855,6 +1855,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _crate: {fileID: 2293055436885448441, guid: c043aeed14305af4995a60493967ba3a, type: 3}
+  _spawnTime: 5
 --- !u!114 &760453114
 MonoBehaviour:
   m_ObjectHideFlags: 0

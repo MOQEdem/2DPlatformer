@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KillPlayer : MonoBehaviour
+public class PlayerKiller : MonoBehaviour
 {
     [SerializeField] private Player _player;
     [SerializeField] private Transform _spawnPlace;

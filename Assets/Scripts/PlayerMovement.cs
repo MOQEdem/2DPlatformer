@@ -16,8 +16,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
-        _rigidbody2D = gameObject.GetComponent<Rigidbody2D>();
-        _animator = gameObject.GetComponent<Animator>();
+        _rigidbody2D = GetComponent<Rigidbody2D>();
+        _animator = GetComponent<Animator>();
         _normalRotation = transform.rotation;
     }
 
@@ -48,7 +48,6 @@ public class PlayerMovement : MonoBehaviour
             _rigidbody2D.AddForce(Vector2.up * _jumpForce);
             _animator.SetTrigger(AnimatorPlayer.Params.Jump);
         }
-
     }
 }
 
