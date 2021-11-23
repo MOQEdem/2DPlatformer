@@ -11,8 +11,7 @@ public class PlayerKiller : MonoBehaviour
     {
         if (collision.TryGetComponent<Player>(out Player player))
         {
-            Destroy(collision.gameObject);
-            Instantiate(_player, _spawnPlace.position, Quaternion.identity);
+            player.GetComponent<Transform>().SetPositionAndRotation(_spawnPlace.position, Quaternion.identity);
         }
     }
 }

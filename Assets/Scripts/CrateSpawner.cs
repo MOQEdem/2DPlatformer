@@ -9,15 +9,17 @@ public class CrateSpawner : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(SpawnCrate(_spawnTime));
+        StartCoroutine(Spawn(_spawnTime));
     }
 
-    private IEnumerator SpawnCrate(float spawnTime)
+    private IEnumerator Spawn(float spawnTime)
     {
+        var waitingTime = new WaitForSeconds(spawnTime);
+
         while (true)
         {
             Instantiate(_crate, transform.position, Quaternion.identity);
-            yield return new WaitForSeconds(spawnTime);
+            yield return waitingTime;
         }
     }
 }
