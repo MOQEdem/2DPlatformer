@@ -1855,7 +1855,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _crate: {fileID: 2293055436885448441, guid: c043aeed14305af4995a60493967ba3a, type: 3}
-  _spawnTime: 5
+  _timeToSpawn: 5
 --- !u!114 &760453114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2241,7 +2241,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86afc1db977ddf74891a2390bee8018a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _player: {fileID: 4000106667982428411, guid: 5976cffca5ff50c44a4f2a74c908faba, type: 3}
   _spawnPlace: {fileID: 955477238}
 --- !u!1 &797866203
 GameObject:

@@ -5,16 +5,16 @@ using UnityEngine;
 public class CrateSpawner : MonoBehaviour
 {
     [SerializeField] private Crate _crate;
-    [SerializeField] private float _spawnTime;
+    [SerializeField] private float _timeToSpawn;
 
     private void Start()
     {
-        StartCoroutine(Spawn(_spawnTime));
+        StartCoroutine(Spawn(_timeToSpawn));
     }
 
-    private IEnumerator Spawn(float spawnTime)
+    private IEnumerator Spawn(float timeToSpawn)
     {
-        var waitingTime = new WaitForSeconds(spawnTime);
+        var waitingTime = new WaitForSeconds(timeToSpawn);
 
         while (true)
         {
